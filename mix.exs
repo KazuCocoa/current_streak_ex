@@ -4,7 +4,7 @@ defmodule CurrentStreakEx.Mixfile do
   def project do
     [
       app: :current_streak_ex,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.0",
       name: "CurrentStreakEx",
       source_url: "https://github.com/KazuCocoa/current_streak_ex",
