@@ -4,7 +4,7 @@ defmodule CurrentStreakExTest do
   alias CurrentStreakEx
 
   setup do
-    html = File.read!("test/data/contributions.html")
+    html = File.read!("test/data/contributions")
     {:ok, html: html}
   end
 
