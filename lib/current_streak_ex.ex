@@ -2,9 +2,13 @@ defmodule CurrentStreakEx do
   alias Floki
   alias HTTPoison
 
+  @scheme "https://"
+  @github_domain "github.com"
+  @contribution_path "/users/:user/contributions"
+
   @spec contributions(binary) :: binary
   def contributions(user) do
-    contribution_url = "https://github.com/users/#{user}/contributions"
+    contribution_url = @scheme <> @github_domain <> String.replace(@contribution_path, ":user", user)
     HTTPoison.get!(contribution_url)
     |> Map.get(:body)
   end

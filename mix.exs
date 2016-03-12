@@ -23,7 +23,7 @@ defmodule CurrentStreakEx.Mixfile do
   defp deps do
     [
       {:httpoison, "~> 0.8"},
-      {:floki, "~> 0.7"}
+      {:floki, "~> 0.8"}
     ]
   end
 
