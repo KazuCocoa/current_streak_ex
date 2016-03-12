@@ -18,7 +18,7 @@ defmodule CurrentStreakEx do
     html
     |> days
     |> filter("data-count")
-    |> Enum.find_index(fn x -> x == 0 end)
+    |> Enum.find_index(&(&1 == 0))
   end
 
   @spec latest_streak_day(binary) :: binary | nil
